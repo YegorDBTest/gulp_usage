@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  node:
+    build:
+      context: ./node
+    entrypoint: /bin/bash /app/entrypoint.sh
+    volumes:
+      - "./node/app:/app"
